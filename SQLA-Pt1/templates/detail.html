@@ -1,0 +1,6 @@
+<img src="{{ user.image_url}}" alt="Profile Image">
+<h1>{{ user.first_name }} {{ user.last_name }}</h1>
+<a href="/users/{{ user.id }}/edit">Edit</a>
+<form action="/users/{{ user.id }}/delete" method="POST">
+    <button type="submit">Remove</button>
+</form>
